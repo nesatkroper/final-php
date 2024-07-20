@@ -78,7 +78,11 @@
         } else {
           $newFileName = uniqid();
           $newFileName .= '.' . $imageExtension;
+
           move_uploaded_file($tmpName, "../../image/" . $newFileName);
+
+          if ($tmpName == "")
+            $tmpName = $pic;
 
           unlink("../../image/$pic");
 

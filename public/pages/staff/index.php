@@ -56,10 +56,17 @@
                       die("Error Getting Data");
 
                     while ($row = $result->fetch_assoc()) {
+
+                      $default = "";
+                      if ($row['pic'] == "")
+                        $default = "default.png";
+                      else
+                        $default = $row['pic'];
+
                       echo "
                         <tr>
                           <td>$i</td>
-                          <td><img src='../../image/$row[pic]' class='rounded-3' style='max-height: 80px' alt=''></td>
+                          <td><img src='../../image/$default' class='rounded-3' style='max-height: 80px' alt=''></td>
                           <td>$row[name]</td>
                           <td>$row[gender]</td>
                           <td>$row[mobile]</td>
