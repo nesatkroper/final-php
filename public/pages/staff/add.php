@@ -87,14 +87,12 @@
             <div class="row g-3">
               <div class="col-md-6">
                 <label for="validationCustom01" class="form-label">Name</label>
-                <input type="text" class="form-control" id="validationCustom01" value="<?php echo $name ?>" name="name"
-                  required />
+                <input type="text" class="form-control" id="validationCustom01" value="<?php echo $name ?>" name="name" required />
                 <div class="valid-feedback">Looks good!</div>
               </div>
               <div class="col-md-6">
                 <label for="validationCustom04" class="form-label">Gender</label>
-                <select class="form-select" id="validationCustom04" value="<?php echo $gender ?>" name="gender"
-                  required>
+                <select class="form-select" id="validationCustom04" value="<?php echo $gender ?>" name="gender" required>
                   <option selected disable value="">
                     Choose Gender
                   </option>
@@ -107,32 +105,27 @@
               </div>
               <div class="col-md-6">
                 <label for="validationCustom02" class="form-label">Mobile</label>
-                <input type="text" class="form-control" id="validationCustom02" value="<?php echo $mobile ?>" name="mob"
-                  required />
+                <input type="text" class="form-control" id="validationCustom02" value="<?php echo $mobile ?>" name="mob" required />
                 <div class="valid-feedback">Looks good!</div>
               </div>
               <div class="col-md-6">
                 <label for="validationCustom02" class="form-label">Email</label>
-                <input type="email" class="form-control" id="validationCustom02" value="<?php echo $email ?>"
-                  name="email" required />
+                <input type="email" class="form-control" id="validationCustom02" value="<?php echo $email ?>" name="email" required />
                 <div class="valid-feedback">Looks good!</div>
               </div>
               <div class="col-md-6">
                 <label for="validationCustom01" class="form-label">Date of Birth</label>
-                <input type="date" class="form-control" id="validationCustom01" value="<?php echo $dob ?>" name="dob"
-                  required />
+                <input type="date" class="form-control" id="validationCustom01" value="<?php echo $dob ?>" name="dob" required />
                 <div class="valid-feedback">Looks good!</div>
               </div>
               <div class="col-md-6">
                 <label for="validationCustom01" class="form-label">Place of Birth</label>
-                <input type="text" class="form-control" id="validationCustom01" value="<?php echo $pob ?>" name="pob"
-                  required />
+                <input type="text" class="form-control" id="validationCustom01" value="<?php echo $pob ?>" name="pob" required />
                 <div class="valid-feedback">Looks good!</div>
               </div>
               <div class="col-md-6">
                 <label for="validationCustom05" class="form-label">Photo</label>
-                <input type="file" class="form-control custom-file-input" id="image" name="image"
-                  accept=".jpg, .jpeg, .png" />
+                <input type="file" class="form-control custom-file-input" id="image" name="image" accept=".jpg, .jpeg, .png" />
                 <div class="invalid-feedback">
                   Please provide a valid image.
                 </div>
@@ -165,9 +158,9 @@
   </div>
   <script src="../../js/main.js">
   </script>
-  < script src="../../../dist/js/adminlte.js">
-    </script>
-    <script src="../../../dist/fontawesome/js/all.js"></script>
+  <script src="../../../dist/js/adminlte.js">
+  </script>
+  <script src="../../../dist/fontawesome/js/all.js"></script>
 </body>
 
 </html>

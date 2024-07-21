@@ -19,51 +19,52 @@
     include_once("../../components/sidebar.php");
     ?>
 
-    <div class="app-content mt-4">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="card mb-4">
-              <div class="card-header border-0 d-flex flex-column">
-                <h3 class="card-title fw-bold">Staff</h3>
-                <a href='./add.php' class='btn btn-success rounded-2 mt-3' style="width: 150px;">Add New
-                  Staff</a>
-              </div>
-              <div class="card-body table-responsive p-0">
-                <table class="table table-striped align-middle">
-                  <thead>
-                    <tr>
-                      <th>No</th>
-                      <th>Photo</th>
-                      <th>Name</th>
-                      <th>Gender</th>
-                      <th>Mobile</th>
-                      <th>Email</th>
-                      <th>DOB</th>
-                      <th>POB</th>
-                      <th style="width: 20px;"></th>
-                      <th style="width: 20px;"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <?php
-                    $i = 1;
-                    $id = 0;
-                    $sql = "SELECT * FROM `tbl_staff`";
-                    $result = $conn->query($sql);
+    <main class="app-main">
+      <div class="app-content mt-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-header border-0 d-flex flex-column">
+                  <h3 class="card-title fw-bold">Staff</h3>
+                  <a href='./add.php' class='btn btn-success rounded-2 mt-3' style="width: 150px;">Add New
+                    Staff</a>
+                </div>
+                <div class="card-body table-responsive p-0">
+                  <table class="table table-striped align-middle">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>DOB</th>
+                        <th>POB</th>
+                        <th style="width: 20px;"></th>
+                        <th style="width: 20px;"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      $i = 1;
+                      $id = 0;
+                      $sql = "SELECT * FROM `tbl_staff`";
+                      $result = $conn->query($sql);
 
-                    if (!$result)
-                      die("Error Getting Data");
+                      if (!$result)
+                        die("Error Getting Data");
 
-                    while ($row = $result->fetch_assoc()) {
+                      while ($row = $result->fetch_assoc()) {
 
-                      $default = "";
-                      if ($row['pic'] == "")
-                        $default = "default.png";
-                      else
-                        $default = $row['pic'];
+                        $default = "";
+                        if ($row['pic'] == "")
+                          $default = "default.png";
+                        else
+                          $default = $row['pic'];
 
-                      echo "
+                        echo "
                         <tr>
                           <td>$i</td>
                           <td><img src='../../image/$default' class='rounded-3' style='max-height: 80px' alt=''></td>
@@ -78,18 +79,19 @@
                           </td>
                         </tr>
                       ";
-                      $i++;
-                    }
-                    ?>
+                        $i++;
+                      }
+                      ?>
 
-                  </tbody>
-                </table>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 
   </div>

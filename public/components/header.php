@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="app-header navbar navbar-expand bg-body">
+<nav class="app-header navbar navbar-expand bg-body shadow">
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -7,14 +7,14 @@
           <i class="fa fa-bars"></i>
         </a>
       </li>
+      <div class="input-group rounded" style="width: 350px">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0  bg-white" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
     </ul>
-
     <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="bi bi-search"></i>
-        </a>
-      </li>
       <li class="nav-item dropdown user-menu">
         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
           <img src="../../components/669b30939f7e9.jpg" class="user-image rounded-circle" alt="" />
